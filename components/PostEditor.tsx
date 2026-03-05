@@ -49,6 +49,7 @@ export default function PostEditor({ initialPost, isEdit = false }: Props) {
             Image,
         ],
         content: initialPost?.content || '',
+        immediatelyRender: false,
         editorProps: {
             attributes: {
                 'data-placeholder': 'Start writing your article here...',
